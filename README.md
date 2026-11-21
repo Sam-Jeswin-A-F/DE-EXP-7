@@ -129,21 +129,21 @@ A DVE environment will open.
 
 In DVE:
 
-●	Open the testbench hierarchy.
+● 	Open the testbench hierarchy.
 
-●	Locate the signals: clk, rst, en, count[3:0].
+●	 Locate the signals: clk, rst, en, count[3:0].
 
-●	Add the signals to the waveform window.
+●	 Add the signals to the waveform window.
 
-●	Run / inspect the waveform.
+●	 Run / inspect the waveform.
 
-●	Verify that count increments by 1 on every rising edge of clk while en = 1 and rst = 0.
+●	 Verify that count increments by 1 on every rising edge of clk while en = 1 and rst = 0.
 
-●	Verify that count holds its present value whenever en = 0.
+●	 Verify that count holds its present value whenever en = 0.
 
-●	Confirm that count wraps from 1111 back to 0000 after the 16th enabled clock edge (overflow).
+●	 Confirm that count wraps from 1111 back to 0000 after the 16th enabled clock edge (overflow).
 
-●	Confirm that count resets to 0000 immediately whenever rst = 1, independent of clk.
+●	 Confirm that count resets to 0000 immediately whenever rst = 1, independent of clk.
 
 The waveform should agree with the state transition table.
 
@@ -162,23 +162,23 @@ The design was compiled and simulated using Synopsys VCS, and the functionality 
 
 ## Viva-Voce Questions
 
-●	What is the difference between a synchronous counter and a ripple (asynchronous) counter?
+● 	What is the difference between a synchronous counter and a ripple (asynchronous) counter?
 
-●	What is the modulus of this counter, and how is it related to the number of bits?
+●	 What is the modulus of this counter, and how is it related to the number of bits?
 
-●	What happens to the count value on overflow, and why is this called 'wrap-around'?
+●	 What happens to the count value on overflow, and why is this called 'wrap-around'?
 
-●	What is the purpose of the enable (en) input, and what would happen if it were removed?
+●	 What is the purpose of the enable (en) input, and what would happen if it were removed?
 
-●	How would you modify this design to create a down-counter?
+●	 How would you modify this design to create a down-counter?
 
-●	How would you modify this design to create an up/down counter with a direction control input?
+●	 How would you modify this design to create an up/down counter with a direction control input?
 
-●	What is the difference between a synchronous and an asynchronous reset, and which one is used here?
+●	 What is the difference between a synchronous and an asynchronous reset, and which one is used here?
 
-●	Why is a VCD file generated, and what does $dumpvars(0, tb) do?
+●	 Why is a VCD file generated, and what does $dumpvars(0, tb) do?
 
-●	How would you extend this design to an 8-bit or a mod-10 (decade) counter?
+●	 How would you extend this design to an 8-bit or a mod-10 (decade) counter?
 
 ## Result
 
